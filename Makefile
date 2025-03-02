@@ -8,7 +8,7 @@ SRCS = ft_printf.c \
 		ft_putunbr.c \
 		ft_putnbr.c \
 		ft_putptr.c \
-		# ft_print_hexadecimal.c
+		ft_puthex.c
 
 OBJS = $(SRCS:%.c=%.o)
 
