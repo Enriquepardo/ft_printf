@@ -21,18 +21,18 @@
 ## 🚀  Usage
 1. Clone this repository and compile the library:
 ```bash
-  $ git clone https://github.com/yourusername/ft_printf.git
+  git clone https://github.com/yourusername/ft_printf.git
 ```
 2. Navigate to the project directory:
 ```bash
-  $ cd ft_printf
+  cd ft_printf
 ```
 3. Compile the library:
 ```bash
-$ make
+  make
 ```
 ```bash
-$ gcc main.c libftprintf.a -o my_program
+  gcc main.c libftprintf.a -o my_program
 ```
 ```
 ./my_program
