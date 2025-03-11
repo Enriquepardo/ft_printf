@@ -1,4 +1,4 @@
-# ft_printf
+# 📝 ft_printf 📝
 
 ## 📌 Description
 `ft_printf` is a custom implementation of the standard C `printf` function. This project aims to recreate the functionality of `printf` while adhering to strict coding standards and memory management requirements.
