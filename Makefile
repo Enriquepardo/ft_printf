@@ -1,20 +1,25 @@
 NAME = libftprintf.a
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -I.
+CFLAGS = -Wall -Wextra -Werror -I./inc
+SRC_DIR = src/
+INC_DIR = inc/
 
-SRCS = ft_printf.c \
- 		ft_putchar.c \
-		ft_putstr.c \
-		ft_putunbr.c \
-		ft_putnbr.c \
-		ft_putptr.c \
-		ft_puthex.c
+SRCS = src/ft_printf.c \
+ 		src/ft_putchar.c \
+		src/ft_putstr.c \
+		src/ft_putunbr.c \
+		src/ft_putnbr.c \
+		src/ft_putptr.c \
+		src/ft_puthex.c
 
 OBJS = $(SRCS:%.c=%.o)
 
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 	@echo "Library $(NAME) created."
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@rm -rf $(OBJS)
